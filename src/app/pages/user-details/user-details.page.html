@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>user-details</ion-title>
+    <ion-back-button defaultHref="/home" slot="start"></ion-back-button>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content padding>
+
+  <h3> {{ user.name.first }} {{ user.name.last }}</h3>
+  <p>
+    {{ user.location. street }} <br>
+    {{ user.location.postcode}} {{ user.location.city | uppercase }}
+
+  </p>
+
+</ion-content>
