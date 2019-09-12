@@ -20,18 +20,17 @@ export class UserDetailsPage implements OnInit {
     }
   };
 
-  constructor(private route: ActivatedRoute, private router: Router) { 
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe(
       () => {
-        if(router.getCurrentNavigation().extras.state.user){
+        if (router.getCurrentNavigation().extras.state.user) {
           this.user = router.getCurrentNavigation().extras.state.user;
           console.log(this.user);
-        } 
+        }
       }
     );
-    
   }
-
+  
   ngOnInit() {
   }
 

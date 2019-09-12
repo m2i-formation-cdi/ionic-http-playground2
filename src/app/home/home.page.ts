@@ -12,7 +12,7 @@ export class HomePage {
 
   private url: string = 'https://randomuser.me/api';
 
-  private userList: Array<any> = [];
+  public userList: Array<any> = [];
 
   private loadingMode = {
     'REPLACE': 0,
